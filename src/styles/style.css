@@ -11,11 +11,6 @@
   --background: #e2e8f0;
 }
 
-.darkmode {
-  --primary: #1e3a8a;
-  --background: #1e293b;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -35,24 +30,4 @@ header {
     var(--background) 60%,
     var(--background) 80%
   );
-}
-
-#themebutton {
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  width: 50px;
-  height: auto;
-  top: 2%;
-  right: 1%;
-  cursor: pointer;
-}
-
-svg {
-  transition: transform 0.3s ease;
-  fill: white;
-}
-
-svg:hover {
-  transform: scale(1.2);
 }
