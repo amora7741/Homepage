@@ -37,6 +37,7 @@ header {
 .profilecontainer {
   max-width: 60rem;
   display: flex;
+  align-items: center;
 }
 
 .profiledisplay {
@@ -64,4 +65,37 @@ header {
 
 .playfair {
   font-family: 'Playfair Display', serif;
+}
+
+.aboutbox {
+  max-height: 20rem;
+  padding: 30px 20px;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.aboutbox h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.aboutbox p {
+  letter-spacing: 1px;
+  padding: 5px 0px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  padding: 5px 15px;
+}
+
+.icons > * {
+  width: 25px;
+  height: auto;
 }

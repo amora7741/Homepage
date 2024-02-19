@@ -39,6 +39,45 @@ export default function renderHeader() {
   profileContainer.appendChild(profiledisplay);
 
   const aboutBox = document.createElement('div');
+  aboutBox.className = 'aboutbox';
+
+  const aboutHeader = document.createElement('h2');
+  aboutHeader.className = 'playfair';
+  aboutHeader.textContent = 'About me';
+
+  aboutBox.appendChild(aboutHeader);
+
+  const aboutDescription = document.createElement('p');
+  aboutDescription.textContent =
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+
+  aboutBox.appendChild(aboutDescription);
+
+  const icons = document.createElement('div');
+  icons.className = 'icons';
+
+  const githubIcon = new Image();
+  githubIcon.src =
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg';
+
+  icons.appendChild(githubIcon);
+
+  const linkedInIcon = new Image();
+  linkedInIcon.src =
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg';
+
+  icons.appendChild(linkedInIcon);
+
+  const xIcon = new Image();
+
+  xIcon.src =
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg';
+
+  icons.appendChild(xIcon);
+
+  aboutBox.appendChild(icons);
+
+  profileContainer.appendChild(aboutBox);
 
   header.appendChild(profileContainer);
 
