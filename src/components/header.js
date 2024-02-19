@@ -7,6 +7,9 @@ export default function renderHeader() {
   const profileContainer = document.createElement('div');
   profileContainer.className = 'profilecontainer';
 
+  const profiledisplay = document.createElement('div');
+  profiledisplay.className = 'profiledisplay';
+
   const headerImage = document.createElement('picture');
 
   const headerLarge = document.createElement('source');
@@ -25,7 +28,14 @@ export default function renderHeader() {
 
   headerImage.appendChild(defaultHeader);
 
-  profileContainer.appendChild(headerImage);
+  profiledisplay.appendChild(headerImage);
+
+  const profilename = document.createElement('h1');
+  profilename.textContent = 'Ashley Williams';
+
+  profiledisplay.appendChild(profilename);
+
+  profileContainer.appendChild(profiledisplay);
 
   const aboutBox = document.createElement('div');
 

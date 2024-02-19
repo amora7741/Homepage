@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   margin: 0;
@@ -30,4 +31,30 @@ header {
     var(--background) 60%,
     var(--background) 80%
   );
+}
+
+.profilecontainer {
+  max-width: 60rem;
+  display: flex;
+}
+
+.profiledisplay {
+  max-width: 30rem;
+  position: relative;
+}
+
+.profiledisplay img {
+  max-width: 20rem;
+  object-fit: cover;
+  height: auto;
+}
+
+.profiledisplay h1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
 }
