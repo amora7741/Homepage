@@ -31,6 +31,7 @@ export default function renderHeader() {
   profiledisplay.appendChild(headerImage);
 
   const profilename = document.createElement('h1');
+  profilename.className = 'playfair';
   profilename.textContent = 'Ashley Williams';
 
   profiledisplay.appendChild(profilename);

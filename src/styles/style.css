@@ -10,6 +10,7 @@
 :root {
   --primary: #60a5fa;
   --background: #e2e8f0;
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 body {
@@ -44,9 +45,10 @@ header {
 }
 
 .profiledisplay img {
-  max-width: 20rem;
+  max-width: 30rem;
   object-fit: cover;
   height: auto;
+  box-shadow: var(--box-shadow);
 }
 
 .profiledisplay h1 {
@@ -55,6 +57,11 @@ header {
   width: 100%;
   text-align: center;
   color: white;
-  font-family: 'Playfair Display', serif;
   font-weight: normal;
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
 }
