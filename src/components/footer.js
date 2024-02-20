@@ -100,5 +100,7 @@ export default function renderFooter() {
 
   footer.appendChild(contactInfo);
 
+  const headerImage = document.createElement('picture');
+
   return footer;
 }
