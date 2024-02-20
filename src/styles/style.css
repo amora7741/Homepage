@@ -197,6 +197,12 @@ footer .icon {
   .portrait {
     max-width: 20rem;
   }
+
+  .profiledisplay h1 {
+    font-size: 2rem;
+    top: 3%;
+    transform: translateX(95%);
+  }
 }
 
 @media (max-width: 702px) {
@@ -219,5 +225,12 @@ footer .icon {
       var(--background) 60%,
       var(--background) 80%
     );
+  }
+
+  .profiledisplay h1 {
+    font-size: 3rem;
+    top: auto;
+    bottom: 0;
+    transform: none;
   }
 }
