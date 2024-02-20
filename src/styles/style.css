@@ -46,7 +46,7 @@ header {
   position: relative;
 }
 
-.profiledisplay img {
+.portrait {
   max-width: 30rem;
   object-fit: cover;
   height: auto;
@@ -126,14 +126,14 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 .project {
   display: flex;
   flex-direction: column;
   box-shadow: var(--box-shadow);
-  flex: 1 1 20rem;
+  flex: 1 1 15rem;
   transition: transform 0.3s ease;
 }
 
@@ -173,7 +173,8 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  align-items: center;
+  gap: 5rem;
 }
 
 .contactinfo {
@@ -192,9 +193,31 @@ footer .icon {
   filter: invert();
 }
 
-footer picture img {
-  max-width: 40rem;
-  object-fit: cover;
-  height: auto;
-  box-shadow: var(--box-shadow);
+@media (max-width: 944px) {
+  .portrait {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 702px) {
+  .profilecontainer,
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .aboutbox {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  header {
+    background: linear-gradient(
+      180deg,
+      var(--primary) 0,
+      var(--primary) 60%,
+      var(--background) 60%,
+      var(--background) 80%
+    );
+  }
 }

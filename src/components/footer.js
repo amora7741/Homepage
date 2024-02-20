@@ -106,11 +106,18 @@ export default function renderFooter() {
 
   const footerLarge = document.createElement('source');
   footerLarge.srcset = footerLargeImg;
+  footerLarge.media = '(min-width: 944px)';
+
+  const footerSmall = document.createElement('source');
+  footerLarge.srcset = footerSmallImg;
+  footerLarge.media = '(max-width: 944px)';
 
   const defaultFooter = new Image();
+  defaultFooter.className = 'portrait';
   defaultFooter.src = footerLargeImg;
 
   footerImage.appendChild(footerLarge);
+  footerImage.appendChild(footerSmall);
   footerImage.appendChild(defaultFooter);
 
   footer.appendChild(footerImage);

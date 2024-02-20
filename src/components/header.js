@@ -14,16 +14,17 @@ export default function renderHeader() {
 
   const headerLarge = document.createElement('source');
   headerLarge.srcset = largeheaderImg;
-  headerLarge.media = '(min-width: 935px)';
+  headerLarge.media = '(min-width: 944px)';
 
   const headerSmall = document.createElement('source');
   headerSmall.srcset = smallheaderImg;
-  headerSmall.media = '(max-width: 935px)';
+  headerSmall.media = '(max-width: 944px)';
 
   headerImage.appendChild(headerLarge);
   headerImage.appendChild(headerSmall);
 
   const defaultHeader = new Image();
+  defaultHeader.className = 'portrait';
   defaultHeader.src = largeheaderImg;
 
   headerImage.appendChild(defaultHeader);
