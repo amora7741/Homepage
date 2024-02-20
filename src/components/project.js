@@ -5,7 +5,7 @@ export default function createProject(color) {
   project.className = 'project';
 
   const projectDisplay = document.createElement('div');
-  projectDisplay.className = 'projectdisplay';
+  projectDisplay.className = 'projectdisplay playfair';
   projectDisplay.style.backgroundColor = color;
 
   projectDisplay.textContent = 'screenshot of project';
@@ -48,6 +48,13 @@ export default function createProject(color) {
   projectInfoHeader.appendChild(icons);
 
   projectInfo.appendChild(projectInfoHeader);
+
+  const projectDescription = document.createElement('p');
+
+  projectDescription.textContent =
+    'Short description of the project. Just a couple sentences will do.';
+
+  projectInfo.appendChild(projectDescription);
 
   project.appendChild(projectInfo);
 
