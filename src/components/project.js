@@ -27,6 +27,7 @@ export default function createProject(color) {
   icons.className = 'icons';
 
   const githubButton = document.createElement('button');
+  githubButton.className = 'icon';
 
   const githubIcon = new Image();
   githubIcon.src =
@@ -37,6 +38,7 @@ export default function createProject(color) {
   icons.appendChild(githubButton);
 
   const shareButton = document.createElement('button');
+  shareButton.className = 'icon';
 
   const shareIcon = new Image();
   shareIcon.src = openLink;

@@ -57,6 +57,7 @@ export default function renderHeader() {
   icons.className = 'icons';
 
   const githubButton = document.createElement('button');
+  githubButton.className = 'icon';
 
   const githubIcon = new Image();
   githubIcon.src =
@@ -67,6 +68,7 @@ export default function renderHeader() {
   icons.appendChild(githubButton);
 
   const linkedInButton = document.createElement('button');
+  linkedInButton.className = 'icon';
 
   const linkedInIcon = new Image();
   linkedInIcon.src =
@@ -77,6 +79,7 @@ export default function renderHeader() {
   icons.appendChild(linkedInButton);
 
   const xButton = document.createElement('button');
+  xButton.className = 'icon';
 
   const xIcon = new Image();
   xIcon.src =
