@@ -10,5 +10,25 @@ export default function createProject(color) {
 
   project.appendChild(projectDisplay);
 
+  const projectInfo = document.createElement('div');
+  projectInfo.className = 'projectinfo';
+
+  const projectInfoHeader = document.createElement('div');
+  projectInfoHeader.className = 'projectinfoheader';
+
+  const projectName = document.createElement('h3');
+  projectName.textContent = 'Project name';
+
+  projectInfoHeader.appendChild(projectName);
+
+  const icons = document.createElement('div');
+
+  const githubIcon = new Image();
+
+  githubIcon.src =
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg';
+
+  icons.appendChild(githubIcon);
+
   return project;
 }

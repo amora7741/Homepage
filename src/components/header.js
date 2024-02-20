@@ -56,24 +56,35 @@ export default function renderHeader() {
   const icons = document.createElement('div');
   icons.className = 'icons';
 
+  const githubButton = document.createElement('button');
+
   const githubIcon = new Image();
   githubIcon.src =
     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg';
 
-  icons.appendChild(githubIcon);
+  githubButton.appendChild(githubIcon);
+
+  icons.appendChild(githubButton);
+
+  const linkedInButton = document.createElement('button');
 
   const linkedInIcon = new Image();
   linkedInIcon.src =
     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg';
 
-  icons.appendChild(linkedInIcon);
+  linkedInButton.appendChild(linkedInIcon);
+
+  icons.appendChild(linkedInButton);
+
+  const xButton = document.createElement('button');
 
   const xIcon = new Image();
-
   xIcon.src =
     'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg';
 
-  icons.appendChild(xIcon);
+  xButton.appendChild(xIcon);
+
+  icons.appendChild(xButton);
 
   aboutBox.appendChild(icons);
 

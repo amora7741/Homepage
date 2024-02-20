@@ -97,6 +97,8 @@ h2 {
 }
 
 .icons > * {
+  background-color: transparent;
+  border: none;
   width: 25px;
   height: auto;
   cursor: pointer;
@@ -108,7 +110,7 @@ h2 {
 }
 
 main {
-  align-items: center;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -123,7 +125,6 @@ main {
 .project {
   display: flex;
   flex-direction: column;
-  height: auto;
 }
 
 .projectdisplay {
@@ -131,4 +132,17 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.projectinfo {
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projectinfoheader {
+  display: flex;
+  justify-content: space-between;
 }
