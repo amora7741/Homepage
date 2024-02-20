@@ -168,12 +168,13 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
+  gap: 10rem;
 }
 
 .contactinfo {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2.5rem;
 }
 
 .contactinfocontainer {
@@ -184,4 +185,11 @@ footer {
 
 footer .icon {
   filter: invert();
+}
+
+footer picture img {
+  max-width: 40rem;
+  object-fit: cover;
+  height: auto;
+  box-shadow: var(--box-shadow);
 }

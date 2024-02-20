@@ -1,5 +1,7 @@
 import phoneSvg from '../icons/phone.svg';
 import emailSvg from '../icons/email.svg';
+import footerLargeImg from '../images/footer_large.jpg';
+import footerSmallImg from '../images/footer_small.jpg';
 
 export default function renderFooter() {
   const footer = document.createElement('footer');
@@ -100,7 +102,18 @@ export default function renderFooter() {
 
   footer.appendChild(contactInfo);
 
-  const headerImage = document.createElement('picture');
+  const footerImage = document.createElement('picture');
+
+  const footerLarge = document.createElement('source');
+  footerLarge.srcset = footerLargeImg;
+
+  const defaultFooter = new Image();
+  defaultFooter.src = footerLargeImg;
+
+  footerImage.appendChild(footerLarge);
+  footerImage.appendChild(defaultFooter);
+
+  footer.appendChild(footerImage);
 
   return footer;
 }
