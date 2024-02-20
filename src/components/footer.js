@@ -58,11 +58,45 @@ export default function renderFooter() {
   const icons = document.createElement('div');
   icons.className = 'icons';
 
+  const githubButton = document.createElement('button');
+  githubButton.className = 'icon';
+
+  const githubIcon = new Image();
+  githubIcon.src =
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg';
+
+  githubButton.appendChild(githubIcon);
+
+  icons.appendChild(githubButton);
+
+  const linkedInButton = document.createElement('button');
+  linkedInButton.className = 'icon';
+
+  const linkedInIcon = new Image();
+  linkedInIcon.src =
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg';
+
+  linkedInButton.appendChild(linkedInIcon);
+
+  icons.appendChild(linkedInButton);
+
+  const xButton = document.createElement('button');
+  xButton.className = 'icon';
+
+  const xIcon = new Image();
+  xIcon.src =
+    'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg';
+
+  xButton.appendChild(xIcon);
+
+  icons.appendChild(xButton);
+
   contactInfo.appendChild(contactMe);
   contactInfo.appendChild(getInTouch);
   contactInfo.appendChild(address);
   contactInfo.appendChild(phone);
   contactInfo.appendChild(email);
+  contactInfo.appendChild(icons);
 
   footer.appendChild(contactInfo);
 
