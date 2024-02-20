@@ -125,12 +125,14 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 3rem;
+  max-width: 1200px;
 }
 
 .project {
   display: flex;
   flex-direction: column;
   box-shadow: var(--box-shadow);
+  flex: 1 1 20rem;
 }
 
 .projectdisplay {
