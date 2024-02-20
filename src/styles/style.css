@@ -93,7 +93,6 @@ h2 {
   display: flex;
   gap: 15px;
   justify-content: flex-end;
-  padding: 5px 15px;
 }
 
 .icons > * {
@@ -125,6 +124,7 @@ main {
 .project {
   display: flex;
   flex-direction: column;
+  box-shadow: var(--box-shadow);
 }
 
 .projectdisplay {
@@ -136,13 +136,14 @@ main {
 
 .projectinfo {
   background-color: white;
-  box-shadow: var(--box-shadow);
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0px 15px;
 }
 
 .projectinfoheader {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
