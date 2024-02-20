@@ -1,3 +1,4 @@
+import renderFooter from '../components/footer';
 import renderHeader from '../components/header';
 import renderMyWork from '../components/mywork';
 
@@ -6,4 +7,5 @@ export default function renderMain() {
 
   body.appendChild(renderHeader());
   body.appendChild(renderMyWork());
+  body.appendChild(renderFooter());
 }
