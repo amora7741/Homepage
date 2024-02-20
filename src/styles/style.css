@@ -89,6 +89,10 @@ h2 {
   padding: 5px 0px;
 }
 
+.aboutbox .icons {
+  padding: 0px 15px;
+}
+
 .icons {
   display: flex;
   gap: 15px;
