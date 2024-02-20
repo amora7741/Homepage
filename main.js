@@ -110,6 +110,16 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/components/footer.js":
+/*!**********************************!*\
+  !*** ./src/components/footer.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderFooter)\n/* harmony export */ });\nfunction renderFooter() {}\r\n\n\n//# sourceURL=webpack://homepage/./src/components/footer.js?");
+
+/***/ }),
+
 /***/ "./src/components/header.js":
 /*!**********************************!*\
   !*** ./src/components/header.js ***!
@@ -156,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pag
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderMain)\n/* harmony export */ });\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/header */ \"./src/components/header.js\");\n/* harmony import */ var _components_mywork__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/mywork */ \"./src/components/mywork.js\");\n\r\n\r\n\r\nfunction renderMain() {\r\n  const body = document.querySelector('body');\r\n\r\n  body.appendChild((0,_components_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\n  body.appendChild((0,_components_mywork__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\r\n}\r\n\n\n//# sourceURL=webpack://homepage/./src/pages/mainpage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ renderMain)\n/* harmony export */ });\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/footer */ \"./src/components/footer.js\");\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/header */ \"./src/components/header.js\");\n/* harmony import */ var _components_mywork__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/mywork */ \"./src/components/mywork.js\");\n\r\n\r\n\r\n\r\nfunction renderMain() {\r\n  const body = document.querySelector('body');\r\n\r\n  body.appendChild((0,_components_header__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\r\n  body.appendChild((0,_components_mywork__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\r\n  body.appendChild((0,_components_footer__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\r\n}\r\n\n\n//# sourceURL=webpack://homepage/./src/pages/mainpage.js?");
 
 /***/ }),
 
